@@ -5,13 +5,26 @@
 ** 
 */
 
-int my_putchar(char c)
+#include<stdio.h>
+
+int my_strcmp(char*str1, char*str2)
 {
-    write(1, &c, 1);
-}
-int my_strlen(char* str);
-
-int i;
-
-
    
+    while ((*str1 != '\0' && *str2 !='\0') && *str1 == *str2)
+    {
+        str1++;
+        str2++;
+    }
+    if( *str1 == *str2) 
+    {
+        return 0;
+    }
+    else
+    {
+        return  *str1 - *str2;
+    }
+}
+int main()
+{
+  printf("%s\n", my_strcmp("Gazmir", "Sulcaj"));
+}
