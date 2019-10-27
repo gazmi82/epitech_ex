@@ -1,14 +1,20 @@
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
 
-#void my_swap(int *ptr, int *ptr1 )
+#include<stdio.h>
 
+int array_sum(int *tab, int size )
 {
-    int nb1;
-    int nb2;
-
-    nb1 = *ptr;
-    nb2 = *ptr1;
-
-    *ptr = nb2;
-    *ptr1 = nb1;
+    int sum = 0;
+    int i;
+          
+    for(i = 0; i < size; i++)
+        sum = sum + tab[i];        
+    
+    return sum;
 }
- 
+
