@@ -7,24 +7,23 @@
 
 #include<stdio.h>
 
-int my_strcmp(char*str1, char*str2)
+void  my_up(int n)
 {
-   
-    while ((*str1 != '\0' && *str2 !='\0') && *str1 == *str2)
+    int i;
+
+    for (i = n && i !='\0'
+             i++);
     {
-        str1++;
-        str2++;
-    }
-    if( *str1 == *str2) 
-    {
-        return 0;
-    }
-    else
-    {
-        return  *str1 - *str2;
+        int arr[2] = {4, 4};
     }
 }
 int main()
 {
-  printf("%s\n", my_strcmp("Gazmir", "Sulcaj"));
+    my_up(2);
+    printf("%n\d", my_up);
+
+    return (0);
 }
+        
+        
+    

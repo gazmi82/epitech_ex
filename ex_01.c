@@ -1,20 +1,12 @@
-/*
-** EPITECH PROJECT, 2019
-** 
-** File description:
-** 
-*/
-
-#include<stdio.h>
-
-int array_sum(int *tab, int size )
+char my_strcpy(char *dest, char *src)
 {
-    int sum = 0;
     int i;
-          
-    for(i = 0; i < size; i++)
-        sum = sum + tab[i];        
+    i = 0;
     
-    return sum;
-}
-
+     while ( dest[i] != 0)
+     {
+        dest[i] = src[i]; 
+        i++;
+     }
+      return dest[i];
+}    
