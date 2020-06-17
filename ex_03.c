@@ -11,8 +11,7 @@ void  my_up(int n)
 {
     int i;
 
-    for (i = n && i !='\0'
-             i++);
+    for (i = n && i !='\0'; i++);
     {
         int arr[2] = {4, 4};
     }
@@ -20,7 +19,7 @@ void  my_up(int n)
 int main()
 {
     my_up(2);
-    printf("%n\d", my_up);
+    printf("%d\n", my_up);
 
     return (0);
 }
